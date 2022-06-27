@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PfizerRD/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 8adc61af12e92e047a06f276a32a56cdf4deca350f8bb24df95c25ea177fc749
+  sha256: 5a4d5a1cc4d4679ec8db92149596ccb75876d0a9291ea2a8d024a709161baf1f
 
 build:
   number: 0
