@@ -25,7 +25,6 @@ requirements:
     - pip
     - numpy
     - libzip
-    - gsl
   run:
     - python
     - {{ pin_compatible('numpy') }}
@@ -39,7 +38,6 @@ requirements:
     - packaging
     - pyyaml
     - libzip
-    - gsl
 
 test:
   imports:
