@@ -1,5 +1,5 @@
 {% set name = "scikit-digital-health" %}
-{% set version = "0.9.13" %}
+{% set version = "0.9.14" %}
 
 package:
   name: {{ name|lower }}
@@ -25,7 +25,6 @@ requirements:
     - pip
     - numpy
     - libzip
-    - gsl
   run:
     - python
     - {{ pin_compatible('numpy') }}
@@ -39,7 +38,6 @@ requirements:
     - packaging
     - pyyaml
     - libzip
-    - gsl
 
 test:
   imports:
