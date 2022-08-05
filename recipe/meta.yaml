@@ -1,5 +1,5 @@
 {% set name = "scikit-digital-health" %}
-{% set version = "0.9.14" %}
+{% set version = "0.9.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/PfizerRD/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 5a4d5a1cc4d4679ec8db92149596ccb75876d0a9291ea2a8d024a709161baf1f
+  sha256: 6e4c50926851c6027909e7d7632bb5dfda4257547736e5e420694e512184d20d
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
-  skip: True  # [py<37 or win]
+  script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [py<37 or win]
 
 requirements:
   build:
@@ -52,7 +52,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Scikit Digital Health (SKDH) is a Python package with methods for ingesting and analyzing wearable inertial sensor data.'
+  summary: Scikit Digital Health (SKDH) is a Python package with methods for ingesting and analyzing wearable inertial sensor data.
   doc_url: https://scikit-digital-health.readthedocs.io
   dev_url: https://github.com/PfizerRD/scikit-digital-health
 
