@@ -25,6 +25,7 @@ requirements:
     - pip
     - numpy
     - libzip
+    - meson-python
   run:
     - python
     - {{ pin_compatible('numpy') }}
