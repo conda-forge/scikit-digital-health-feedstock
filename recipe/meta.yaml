@@ -15,7 +15,6 @@ build:
   skip: True  # [py<37 or win]
   build_platform:
     osx_arm64: osx_64
-    osx_64: osx_64
   test_on_native_only: true
 
 requirements:
