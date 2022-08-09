@@ -41,6 +41,7 @@ requirements:
     - packaging
     - pyyaml
     - libzip
+    - importlib_metadata  # [py<38]
 
 test:
   imports:
