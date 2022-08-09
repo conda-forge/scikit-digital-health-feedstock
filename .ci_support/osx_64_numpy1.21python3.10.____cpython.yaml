@@ -31,3 +31,21 @@ zip_keys:
   - fortran_compiler_version
 - - python
   - numpy
+build_platform:
+- osx-arm64
+
+CONDA_BUILD_SYSROOT:
+- /Users/lukasadamowicz/.osx_sdk/MacOSX10.9.sdk
+
+build_platform:
+- osx-arm64
+
+CONDA_BUILD_SYSROOT:
+- /Users/lukasadamowicz/.osx_sdk/MacOSX10.9.sdk
+
+build_platform:
+- osx-arm64
+
+CONDA_BUILD_SYSROOT:
+- /Users/lukasadamowicz/.osx_sdk/MacOSX10.9.sdk
+
