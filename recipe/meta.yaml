@@ -11,8 +11,8 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
-  skip: True  # [osx and py==37 or py<37 or win]
+  script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [osx and py==37 or py<37 or win]
 
 requirements:
   build:
