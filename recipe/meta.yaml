@@ -20,6 +20,7 @@ requirements:
     - {{ compiler('fortran') }}
     - {{ compiler('m2w64_c') }}  # [win]
     - {{ compiler('m2w64_fortran') }}  # [win]
+    - pkg-config
   host:
     - python
     - pip
