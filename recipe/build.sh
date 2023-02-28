@@ -3,7 +3,7 @@
 set -ex
 
 if [[ "${CONDA_BUILD_CROSS_COMPILATION:-0}" != "1" ]]; then
-  "${PYTHON}" -m pip install . -v --no-deps
+  "${PYTHON}" -m pip install . -vv
 else
   cat >> pkgconfig.ini <<EOF
 [binaries]
