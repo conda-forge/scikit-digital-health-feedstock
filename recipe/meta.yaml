@@ -11,11 +11,15 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  # script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [osx and py==37 or py<37 or win]
 
 requirements:
   build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
+    - meson-python                           # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ compiler('fortran') }}
     - {{ compiler('m2w64_c') }}  # [win]
