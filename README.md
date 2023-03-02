@@ -1,11 +1,11 @@
-About scikit-digital-health
-===========================
+About scikit-digital-health-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-digital-health-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/PfizerRD/scikit-digital-health
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-digital-health-feedstock/blob/main/LICENSE.txt)
 
 Summary: Scikit Digital Health (SKDH) is a Python package with methods for ingesting and analyzing wearable inertial sensor data.
 
