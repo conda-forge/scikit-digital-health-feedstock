@@ -22,8 +22,8 @@ requirements:
     - meson-python                           # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ compiler('fortran') }}
-    - {{ compiler('m2w64_c') }}  # [win]
-    - {{ compiler('m2w64_fortran') }}  # [win]
+#     - {{ compiler('m2w64_c') }}  # [win]
+#     - {{ compiler('m2w64_fortran') }}  # [win]
     - pkg-config
   host:
     - python
