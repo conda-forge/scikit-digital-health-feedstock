@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   # script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [osx and py==37 or py<37]
+  skip: true  # [osx and py==37 or py<37 or win]
 
 requirements:
   build:
@@ -22,8 +22,8 @@ requirements:
     - meson-python                           # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ compiler('fortran') }}
-#     - {{ compiler('m2w64_c') }}  # [win]
-#     - {{ compiler('m2w64_fortran') }}  # [win]
+    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ compiler('m2w64_fortran') }}  # [win]
     - pkg-config
   host:
     - python
