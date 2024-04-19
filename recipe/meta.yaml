@@ -1,5 +1,5 @@
 {% set name = "scikit-digital-health" %}
-{% set version = "0.15.2" %}
+{% set version = "0.15.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PfizerRD/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 161279a5f4c3f246d31036a9e145fbe0d259c274a65370b01ff5d9752c5b3829
+  sha256: 08ba5379c8b0b37e3ec0e7fdaec08aa0341b07b7d2a44296be6fb8d17ec8e7af
 
 build:
   number: 0
@@ -21,8 +21,10 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
     - meson-python                           # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('fortran') }}
     - {{ compiler('m2w64_c') }}  # [win]
+    - {{ stdlib("c") }}          # [win]
     - {{ compiler('m2w64_fortran') }}  # [win]
     - pkg-config
   host:
