@@ -1,5 +1,5 @@
 {% set name = "scikit-digital-health" %}
-{% set version = "0.15.3" %}
+{% set version = "0.15.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PfizerRD/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 08ba5379c8b0b37e3ec0e7fdaec08aa0341b07b7d2a44296be6fb8d17ec8e7af
+  sha256: dda528cb6032d8c8fea486166daa9a6ff23bd96e4405b044aba3809a48b31e04
 
 build:
   number: 0
@@ -44,6 +44,7 @@ requirements:
     - matplotlib-base
     - packaging
     - pyyaml
+    - avro
     - importlib_metadata  # [py<38]
 
 test:
