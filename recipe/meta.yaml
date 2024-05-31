@@ -1,5 +1,5 @@
 {% set name = "scikit-digital-health" %}
-{% set version = "0.15.5" %}
+{% set version = "0.15.5.post3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PfizerRD/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 545b58281ef18f2fc00f8ee494796c1d930bfa61c7592d2f978ac70e797a2fc8
+  sha256: 965713be622febad264832f7f2bf6c33e3950ddb9b7b0788291b4feda43f23df
 
 build:
   number: 0
