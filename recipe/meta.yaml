@@ -10,7 +10,7 @@ source:
   sha256: 6bc2b0552851d5b81c87a0ef12230427146d6969c1962cf9e5cbba2ab12c97bd
 
 build:
-  number: 0
+  number: 1
   # script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<39 or win]
 
@@ -30,11 +30,10 @@ requirements:
   host:
     - python
     - pip
-    - numpy
+    - numpy >=1.25.0
     - meson-python
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - scipy >=1.12.0
     - pandas >=1.0.0
     - lightgbm >=2.3.0
