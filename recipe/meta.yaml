@@ -30,7 +30,7 @@ requirements:
   host:
     - python
     - pip
-    - numpy
+    - numpy >= 1.25.0
     - meson-python
   run:
     - python
