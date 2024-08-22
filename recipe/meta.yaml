@@ -20,18 +20,20 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - meson-python                           # [build_platform != target_platform]
+    - pkg-config                             # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('fortran') }}
     - {{ compiler('m2w64_c') }}  # [win]
     - {{ stdlib("c") }}          # [win]
     - {{ compiler('m2w64_fortran') }}  # [win]
-    - pkg-config
   host:
     - python
     - pip
     - numpy
+    - meson
     - meson-python
+    - python-build
   run:
     - python
     - numpy >=1.25.0
