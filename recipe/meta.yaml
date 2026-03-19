@@ -1,5 +1,5 @@
 {% set name = "scikit-digital-health" %}
-{% set version = "0.17.10" %}
+{% set version = "0.17.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/PfizerRD/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 417b5d739e24875be4f53fff9f0ffa7d4d58f5bdc4814d5e249c8f053c2e2ea6
+  sha256: e01b1741d9be8c611306929eb11566075bd2bb677834a3730abce3375dfee9e9
 
 build:
   number: 0
   # script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<39 or win]
+  skip: true  # [py<311 or win]
 
 requirements:
   build:
@@ -47,7 +47,6 @@ requirements:
     - packaging
     - pyyaml
     - avro
-    - importlib_metadata  # [py<38]
 
 test:
   imports:
